@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/*
+	Reglas CSS estan compuestas de tres elementos:
+		1. Selector
+		2. Propiedad(s)
+		3. Valor de la(s) propiedad(es)
+
+		Sintaxis:
+			selector {
+				nombre-propiedad1: valor;
+				nombre-propiedad2: valor;
+				nombre-propiedad3: valor;
+				...
+			}
+
+		Tipos de selector básicos:
+			- Por nombre de elemento.
+			- Por clase (valor atributo class)
+			- por id (valor atributo id)
+
+*/
+
+/*
+p {
+	
+		0 dec => 00 hex
+		255 dec => FF hex
+		
+		Los caracteres en hex (A-F),
+	    de preferencia usarlos en mayúsculas.
+	
+	
+	color: rgb(255, 0, 0);
+	color: #FFFFFF;
+	color: #000000;
+	color: #FF0000;
+	color: #0000F1;
+	color: #36A;
+	color: #3366AA;
+	color: #AF1719;
+}
+*/
+
+/*p {
+	color: #F00;
+}
+
+a {
+	color: #0F0;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+#main {
+	color: #FF0;
+}
+
+.blue {
+	color: #00F;
+	font-size: 20px;
+}
+*/
+
+
+/*
+	Relevancia en selectores:
+	
+	p 				= 1
+	.blue 			= 10
+	#blue			= 100 (mala practica)
+	(inline style)	= 1000 (mala practica)
+	!important 		= 10000 (mala practica)
+
+
+h2 {
+	font-size: 50px !important;
+}
+.blue {
+	font-size: 100px;
+}
+#red {
+	font-size: 200px;
+}
+*/
+
+#section1 h2 {
+	color: #F0F;
+}
+
+#section4 a {
+	font-size: 8px;
+}
+
+/*
+	Modelo de cajas (Model box):
+		background
+		width
+		height
+		padding (permite establecer el valor de los 4 lados)
+			padding-top
+			padding-right
+			padding-bottom
+			padding-left
+		border
+		margin (permite establecer el valor de los 4 lados)
+			margin-top
+			margin-right
+			margin-bottom
+			margin-left
+
+
+*/
+
+.box {
+	/*
+		Propiedades específicas de la propiedad "margin"
+		reciben un solo valor.
+	*/
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+
+.box-2 {
+	/*
+		"margin" es la propiedad general y puede recibir
+		hasta 4 valores (uno por cada lado);
+	
+		*Cuando una propiedad reciba más de un valor,
+		estos valores van separados por un espacio.
+	
+			1er valor => top
+			2do valor => right
+			3er valor => bottom
+			4to valor => left
+	
+	*/
+	margin: 10px 20px 30px 40px;
+	
+	/*
+		Cuando recibe 3 valores, estos se aplican
+		de la siguiente manera:
+	
+			1er valor => top
+			2do valor => left, right
+			3er valor => bottom
+		
+	*/
+	margin: 10px 20px 30px; 
+	
+	/*
+		Cuando recibe 2 valores, estos se aplican
+		de la siguiente manera:
+	
+			1er valor => top,bottom
+			2do valor => left, right
+		
+	*/
+	margin: 10px 20px;
+	
+	/*
+		Cuando recibe 1 valor, se aplica
+		de la siguiente manera:
+	
+			1er valor => top, right, bottom, left;
+		
+	*/
+	margin: 10px;
+}
+
+
+/* Border
+		border (propiedad general)
+		border-top
+		border-right
+		border-bottom
+		border-left
+
+		Reciben 3 valores:
+			- ancho de border (px)
+			- estilo de borde (solid)
+			- color del borde (hex, rgb, rgba entre otros)
+*/
+
+/* Ejemplo borde para los cuatro lados */
+img {
+	border: 1px solid #F00;
+}
+
+/* Ejemplo borde inferior */
+img {
+	border-bottom: 1px solid #F00;
+}
+
+/* Ejemplo borde para los cuatro lados propiedades especìficas */
+img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F00;
+}
+
+/* Ejemplo borde inferior con propiedades especìficas */
+img {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F00;
+}
+
+
+
+
+
+
+
+
