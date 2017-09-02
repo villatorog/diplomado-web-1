@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento flotante (float)</title>
+    <style>
+        .father {
+            background-color: #333;
+        }
+        /*
+        .father:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        */
+        .child {
+            width: 100px;
+            height: 100px;
+        }
+        .child-1 {
+            background-color: #F00;
+            float: left;
+        }
+        .child-2 {
+            background-color: #FF0;
+            float: right;
+        }
+        .child-3 {
+            background-color: #0F0;
+            float: left;
+        }
+        .child-4 {
+            background-color: #00F;
+            float: right;
+        }
+        .child-5 {
+            background-color: #F0F;
+            float: left;
+        }
+        .break {
+            clear: both;
+        }
+        .paragraph {
+            clear: both;
+        }
+        .paragraph:before {
+            content: "* ";
+        }
+        .paragraph:after {
+            content: " *"
+        }
+        /* Helpers */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: block;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        /*
+            float: Para flotar elementos.
+                Cuando se flota un elemento, éste sale del flujo normal
+                de la renderización de la página.
+            
+                Los posibles valores son (básicamente):
+                    - left
+                    - right
+            
+            clear: Para forzar a que los elementos que están por debajo de los
+                elementos flotados, reconozcan el espacio disponible.
+                Los posibles valores son:
+                    - left (reconoce sólo los elementos flotados a la izquierda).
+                    - right (reconoce sólo los elementos flotados a la derecha).
+                    - both (reconoce elementos flotados tanto a la izquierda como a la derecha).
+
+            content: Sirve para añadir texto "antes" o "después" del contenido de un
+                elemento, pero siempre adentro del elemento.
+            
+            Pseudo elementos ":before" y ":after"
+                La propiedad "content" siempre funciona en conjunto con estos pseudo elementos.
+        */
+    </style>
+</head>
+<body>
+    <!--
+    <div class="father">
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+        <div class="child child-3"></div>
+        <div class="child child-4"></div>
+        <div class="child child-5"></div>
+        <div class="break"></div>
+    </div>
+    -->
+
+    <div class="father clearfix">
+            <div class="child child-1"></div>
+            <div class="child child-2"></div>
+            <div class="child child-3"></div>
+            <div class="child child-4"></div>
+            <div class="child child-5"></div>
+        </div>
+    
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et consectetur quos illo placeat corrupti, natus accusantium aliquam quidem eligendi est dolor reprehenderit, asperiores, eius maiores iure inventore laboriosam. Consectetur doloremque quidem blanditiis architecto modi alias, necessitatibus ut placeat numquam totam sapiente dolore nulla quis ratione, debitis voluptatibus? Dolorum quibusdam aut quo alias facilis, cupiditate debitis? A cum dolore molestiae dolorem neque incidunt quod id commodi assumenda quo. Perferendis doloremque voluptas iste cupiditate quibusdam explicabo et harum. Reprehenderit nesciunt a tempora! Dolorum nesciunt itaque similique nulla? Molestias ut veritatis pariatur, rerum commodi tempora ipsam esse voluptatibus ratione, tenetur reiciendis voluptate ullam.</p>
+    
+</body>
+</html>

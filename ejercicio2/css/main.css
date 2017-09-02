@@ -8,41 +8,159 @@
 
 /* Generals */
 body {
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+figure {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    /*
+        box-sizing: border-box; Va a tomar el valor de "padding" y "border"
+        del mismo ancho establecido o por defecto.
+    */
 }
 
 /* Header */
 .page-header {
-	/*
-		background (propiedad general)
-		background-color (hex, rgba, entre otros), default: transparent
-		background-image (url de la imagen)
-		background-repeat (repeat, no-repeat), default: repeat
-		background-position (recibe dos valores: x, y) default: left top
-			posibles valores para x, y:
-				x: left, center, right, valor en px
-				y: top, center, bottom, valor en px
-		background-attachment (scroll, fixed), default: scroll
-	*/
-	background: #F00 url(../images/img-header.jpg) no-repeat center center;
-	min-height: 300px;
+    /*
+        background (propiedad general)
+        background-color (hex, rgba, entre otros), default: transparent
+        background-image (url de la imagen)
+        background-repeat (repeat, no-repeat), default: repeat
+        background-position (recibe dos valores: x, y) default: left top
+            posibles valores para x, y:
+                x: left, center, right, valor en px
+                y: top, center, bottom, valor en px
+        background-attachment (scroll, fixed), default: scroll
+    */
+    background: #F00 url(../images/img-header.jpg) no-repeat center center;
+    padding: 100px 25px;
 }
 .page-header h1 {
-	margin: 0;
-	font-size: 40px;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: #FFF;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /*
+     text-shadow: recibe 4 valores:
+        1. Posición en x
+        2. Posición en y
+        3. Blur
+        4. color (hex, rgba)
+    */
 }
 
 /* Nav */
+.page-nav {
+    background-color: #333;
+}
+.page-nav li {
+    float: left;
+}
+.page-nav a {
+    display: block;
+    background-color: #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #CCC;
+    transition: background-color 300ms, color 300ms;
+    /*
+        transition: funciona con propiedades que utilizan valores
+            numéricos y recibe dos valores:
+            1. Nombre de la propiedad (a transicionar o "all").
+            2. valor de la duración de la transición:
+                300ms   (milisegundos)
+                .3s     (segundos)
+            
+            * Se pueden añadir más propiedades a transicionar, separandolas
+              mediante comas.
+        
+            transition: all 300ms;
+    */
+}
+.page-nav a:hover,
+.page-nav a.active {
+    background-color: #F000A1;
+    color: #FFF;
+}
 
 /* Main */
+.page-main {
+    padding: 65px 0;
+}
+.page-main h2 {
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #F000A1;
+    color: #F000A1;
+}
+.page-main h2:first-child {
+    margin-top: 0;
+    line-height: 1;
+}
+.page-main img {
+    border: 10px solid #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 300ms;
+}
+.page-main img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.page-main p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.page-section__col {
+    width: 50%;
+}
+.page-section__col--left {
+    float: left;
+}
+.page-section__col--right {
+    float: right;
+}
+.page-section__gallery li {
+    display: inline-block;
+    max-width: 150px;
+}
 
 /* Footer */
+.page-footer {
+    background-color: #333;
+    padding: 25px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #FFF;
+}
+.page-footer p {
+    margin: 0;
+}
 
 /* Helpers */
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+}
