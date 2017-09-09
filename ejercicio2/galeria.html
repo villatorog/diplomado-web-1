@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Galería | Ejercicio 2</title>
+    <link rel="stylesheet" href="css/plugins/lightbox.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -25,15 +26,22 @@
                 <div class="page-section__row clearfix">
                     <div class="page-section__col page-section__col--left">
                         <figure>
-                            <img src="images/img-1.jpg" alt="">
+                            <img id="imgPrincipal" src="images/img-1.jpg" alt="">
                         </figure>
                     </div>
                     <div class="page-section__col page-section__col--right">
                         <h2>Galería</h2>
+                        <!--
                         <ul class="page-section__gallery list-unstyled">
-                            <li><a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a></li>
-                            <li><a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a></li>
-                            <li><a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a></li>
+                            <li><a href="images/img-1.jpg" data-lightbox="image-group-1" data-title="Descripción imagen 1"><img src="images/img-1.jpg" alt=""></a></li>
+                            <li><a href="images/img-2.jpg" data-lightbox="image-group-1" data-title="Descripción imagen 2"><img src="images/img-2.jpg" alt=""></a></li>
+                            <li><a href="images/img-3.jpg" data-lightbox="image-group-1" data-title="Descripción imagen 3"><img src="images/img-3.jpg" alt=""></a></li>
+                        </ul>
+                        -->
+                        <ul class="page-section__gallery list-unstyled">
+                            <li><a href="images/img-1.jpg" class="img-mini"><img src="images/img-1.jpg" alt=""></a></li>
+                            <li><a href="images/img-2.jpg" class="img-mini"><img src="images/img-2.jpg" alt=""></a></li>
+                            <li><a href="images/img-3.jpg" class="img-mini"><img src="images/img-3.jpg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,6 +50,11 @@
         <footer class="page-footer">
             <p>Todos los derechos reservados | eduMac 2017 | Sergio Pg</p>
         </footer>
+    </div>
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins/lightbox.js"></script>
+        <script src="js/main.js"></script>
     </div>
 </body>
 
