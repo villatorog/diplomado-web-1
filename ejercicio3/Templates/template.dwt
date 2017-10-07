@@ -1,61 +1,64 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <!-- TemplateBeginEditable name="doctitle" -->
-	<title>Untitled Document</title>
-	<!-- TemplateEndEditable -->
-
-	<!-- TemplateBeginEditable name="head" -->
-	<!-- TemplateEndEditable -->
-    <link rel="stylesheet" href="css/main.css" />
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
-    <div class="container">
-        <header class="page-header">
-            <h1>Título página</h1>
-        </header>
-      <nav class="page-nav">
-            <ul>
-                <li><a href="#">Sección 1</a></li>
-                <li><a href="#">Sección 2</a></li>
-                <li><a href="#">Sección 3</a></li>
-                <li><a href="#">Sección 4</a></li>
+<div class="wrapper">
+    <header class="page-header">
+        <div class="container">
+            <img src="../images/logo.svg" alt="" />
+            <h1 class="hidden">Citi Bank</h1>
+        </div>
+    </header>
+    <nav class="page-nav">
+        <div class="container">
+            <ul class="clearfix">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios.html">Servicios</a></li>
+                <li><a href="../productos.html">Productos</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
-        </nav>
-        <main class="page-main">
-			<!-- TemplateBeginEditable name="principal" -->
-			
+        </div>
+    </nav>
+    <main class="page-main">
+        <div class="container">
+            <!-- TemplateBeginEditable name="principal" -->
+            
             <section class="page-section">
-                <h2>Sección 1</h2>
+                <div class="row">
+                    <div class="col col-8">
+                        <h2>Inicio</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perspiciatis <em>delectus nesciunt aliquam ex</em>, aut aperiam sunt cum animi dolorem qui, provident perferendis eveniet distinctio labore inventore modi nulla odit at! At fugit minus, hic ipsum voluptas soluta exercitationem atque vero ipsa, blanditiis nulla nisi. Doloribus et sint facilis est dolorum, odit, commodi. Iure facere exercitationem asperiores. Fuga quo maiores possimus ut ducimus voluptas accusantium recusandae in tenetur perferendis, odio optio, sequi, repudiandae veritatis libero numquam nisi quisquam. Unde nesciunt aut hic facere magni quod pariatur optio voluptates inventore, iste iure tempora. Deserunt atque earum rem saepe non eos a.</p>
+                        <p>Eaque <em>exercitationem adipisci voluptates</em> corrupti sit atque, ab eveniet dolor nemo aliquid laborum excepturi qui voluptatem quis perferendis quae provident! Aliquam accusantium ea in, eaque maiores, <strong>voluptates temporibus</strong>, fugiat praesentium illo exercitationem voluptatum quisquam nobis officiis mollitia quaerat unde! Aspernatur explicabo officiis rem placeat distinctio eius praesentium, unde esse harum vitae, ipsam reprehenderit possimus eum id enim earum <a href="#">doloremque ratione quo ex expedita</a>. Officiis impedit mollitia iusto eligendi pariatur nobis nihil tempore nisi. Voluptas, similique, laboriosam. Nam et ipsa tempore vero unde quisquam quod quas odio dignissimos inventore mollitia harum culpa dolores, laborum repellat. A placeat tenetur quas quibusdam blanditiis.</p>
+                        <p>Dolore quos, officia, aperiam nemo illo error. Nesciunt modi voluptates atque fuga laboriosam laudantium similique est autem in eaque placeat quod aliquam molestias maxime nisi, optio quam dicta. Molestias eius, reprehenderit sunt ea voluptates eligendi nemo maiores, nobis, eaque provident, facere. Accusamus unde sit sapiente harum molestiae, modi animi assumenda quia repellat voluptas vitae dolorem sed quam asperiores voluptatem ea atque? Ipsam dolores repellat doloremque vel unde, <a href="http://facebook.com" target="_blank">fuga ea fugiat temporibus omnis</a>, quibusdam repellendus ipsum dolorem quia nostrum dignissimos nobis reiciendis similique quisquam saepe voluptatum minus. Autem labore, ducimus tempore maxime sed sequi unde fugiat tempora quaerat facere officia dolore.</p>
+                    </div>
+                    <div class="col col-4">
+                        <img src="../images/img-1.jpg" alt="">
+                    </div>
+                </div>
             </section>
-
-            <section class="page-section">
-                <h2>Sección 2</h2>
-            </section>
-
-            <section class="page-section">
-                <h2>Sección 3</h2>
-            </section>
-
-            <section class="page-section">
-                <h2>Sección 4</h2>
-            </section>
- 
+            
             <!-- TemplateEndEditable -->
-        </main>
-        <footer class="page-footer">
-          <p>Todos los derechos reservados | eduMac 2017 | Sergio Pg</p>
-      </footer>
-    </div>
-    <div id="js">
-        <script src="js/lib/jquery-3.2.1.min.js"></script>
-        <!-- TemplateBeginEditable name="js" -->
-		<!-- TemplateEndEditable -->
-        <script src="js/main.js"></script>
-    </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <p>Todos los derechos reservados | eduMac 2017 | Sergio Pg</p>
+        </div>
+    </footer>
+</div>
+<div id="js"> 
+    <script src="../js/lib/jquery-3.2.1.min.js"></script> 
+    <!-- TemplateBeginEditable name="js" --> <!-- TemplateEndEditable --> 
+    <script src="../js/main.js"></script> 
+</div>
 </body>
-
 </html>
