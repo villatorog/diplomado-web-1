@@ -6,6 +6,9 @@
 /* Normalize */
 @import url("lib/normalize.css");
 
+/* Grid */
+@import url("lib/grid.css");
+
 /* Generals */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -13,6 +16,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 ul,
 ol {
@@ -44,4 +48,19 @@ img {
 }
 .clearfix:after {
     clear: both;
+}
+.margin-bottom,
+.mb {
+    margin-bottom: 25px;
+
+}
+.margin-top,
+.mt {
+    margin-bottom: 25px;
+
+}
+.margin-vertical,
+.mv {
+    margin-bottom: 25px 0;
+
 }
